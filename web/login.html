@@ -1,0 +1,154 @@
+﻿<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>تسجيل الدخول</title>
+    <meta charset="utf-8" />
+    <meta name=" description" content=" login" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Stylesheet" href="css/style.css" />
+    </head>
+<body>
+
+    <header>
+
+        <div class="search-container">
+            <center>
+
+
+    <form action="/action_page.php">
+        <input type="text" placeholder="البحث عن برنامج تدريبي" name="search">
+        <button type="submit"><i class="SearchButton"> بحث</i></button>
+
+    </form>
+</center>
+        </div>
+        <br />
+
+        <div class="container">
+            <div id="brand">
+                <h1> التدريب والتطوير</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"> <a href="index.html">الصفحة الرئيسية </a></li>
+                    <li>  <a href="login.html">تسجيل الدخول </a></li>
+                    <li> <a href="SignUp.html">إنشاء حساب </a> </li>
+                    <li> <a href="AboutUs.html">عن التدريب والتطوير </a> </li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+  -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ادارة التدريب والتطوير </title>
+
+    <meta charset="utf-8" />
+    <meta name=" description" content=" تسجيل الدخول" />
+
+    <link rel="Stylesheet" href="css/style.css" />
+
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="search-container">
+            <center>
+
+
+                <form action="/action_page.php">
+                    <input type="text" placeholder="البحث عن برنامج تدريبي" name="search">
+                    <button type="submit"><i class="SearchButton"> بحث </i></button>
+
+                </form>
+            </center>
+        </div>
+        <br />
+
+
+
+        <div class="container">
+            <div id="brand">
+                <h1> التدريب والتطوير</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"> <a href="index.html">الصفحة الرئيسية </a></li>
+                    <li>  <a href="login.html">تسجيل الدخول </a></li>
+                    <li> <a href="SignUp.html"> انشاء حساب  </a> </li>
+                    <li> <a href="AboutUs.html">عن التدريب والتطوير </a> </li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <center>
+     <a   <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"></button>  <img src="images/login.png" style="width:500px; height:500px" /> </a>
+       
+
+        <div id="id02" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+
+                <div class="container">
+
+                    <table>
+                        <tr>
+                            <td>نوع المستخدم</td>
+                            <td>
+                                <select name="type">
+                                    <option value="-1"> اختر نوع المستخدم</option>
+                                    <option value="admin"> مدير</option>
+                                    <option value="user"> موظف</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <br />
+
+
+                    <label for="uname"><b>اسم المستخدم</b></label>
+                    <input type="text" placeholder="ادخل اسم المستخدم" name="uname" required>
+
+                    <label for="psw"><b>كلمة المرور</b></label>
+                    <input type="password" placeholder="ادخل كلمة المرور" name="psw" required>
+
+
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="submit" class="button7">تسجيل دخول</button>
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="button6">الغاء</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> تذكرني
+                        </label>
+                        <span class="psw"> <a href="#">نسيت كلمة المرور</a></span>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+
+    </center>
+</body>
+</html>
+
+<footer>
+    <p>  ادرة موقع التدريب والتطوير&copy; 2022</p>
+</footer>
+

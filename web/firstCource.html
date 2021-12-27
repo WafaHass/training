@@ -1,0 +1,226 @@
+﻿<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>تسجيل الدخول </title>
+    <meta charset="utf-8" />
+    <meta name=" description" content=" login" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <header>
+
+
+        <div class="search-container">
+            <center>
+
+
+                <form action="/action_page.php">
+                    <input type="text" placeholder="البحث عن برنامج تدريبي" name="search">
+                    <button type="submit"><i class="SearchButton"> بحث</i></button>
+
+                </form>
+            </center>
+        </div>
+        <br />
+
+        <div class="container">
+            <div id="brand">
+                <h1> التدريب والتطوير</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"> <a href="index.html">الصفحة الرئيسية </a></li>
+                    <li>  <a href="login.html">تسجيل الدخول </a></li>
+                    <li> <a href="SignUp.html">إنشاء حساب </a> </li>
+                    <li> <a href="AboutUs.html">عن التدريب والتطوير </a> </li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ادارة التدريب والتطوير </title>
+
+    <meta charset="utf-8" />
+    <meta name=" description" content="البرنامج التدريبي الأول" />
+
+    <link rel="Stylesheet" href="css/style.css" />
+
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="search-container">
+            <center>
+
+
+                <form action="/action_page.php">
+                    <input type="text" placeholder="البحث عن برنامج تدريبي" name="search">
+                    <button type="submit"><i class="SearchButton"> بحث </i></button>
+
+                </form>
+            </center>
+        </div>
+        <br />
+
+
+
+        <div class="container">
+            <div id="brand">
+                <h1> التدريب والتطوير</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"> <a href="index.html">الصفحة الرئيسية </a></li>
+                    <li>  <a href="login.html">تسجيل الدخول </a></li>
+                    <li> <a href="SignUp.html"> انشاء حساب  </a> </li>
+                    <li> <a href="AboutUs.html">عن التدريب والتطوير </a> </li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <center>
+        <h2>البرنامج التدريبي الأول</h2>
+        <!-- <p>Move the mouse over the button to open the dropdown menu.</p>  -->
+        <section class="cource1">
+            <div class="dropdown">
+                <button class="dropbtn" style="width:500px">المحاور</button>
+                <div class="dropdown-content">
+                    <ol>
+                        <li>   <h3> الاول </h3> </li>
+
+                        <li>   <h3> الثاني </h3> </li>
+                        <li>   <h3> الثالث </h3> </li>
+                        <li>   <h3>الرابع </h3> </li>
+
+
+                    </ol>
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="dropdown">
+                <button class="dropbtn" style="width:500px">مقدم الدورة </button>
+                <div class="dropdown-content">
+                    <a href="#">1</a>
+
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <div class="dropdown">
+                <button class="dropbtn" style="width:500px">مكان الانعقاد</button>
+                <div class="dropdown-content">
+                    <a href="#">1</a>
+
+                </div>
+            </div>
+
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <div class="dropdown">
+                <button class="dropbtn" style="width:500px">التسجيل في الدورة</button>
+                <div class="dropdown-content">
+
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">تسجيل</button>
+
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <form class="modal-content" action="/action_page.php">
+                            <div class="container">
+                                <h1>تسجيل</h1>
+
+                                <hr>
+                                <label for="text"><b>اسم الموظف الرباعي</b></label>
+                                <input type="text" placeholder=" " name="name" required>
+
+                                <label for="number"><b>الرقم الوظيفي</b></label>
+                                <input type="password" placeholder="" name="number" required>
+
+                                <label for="section"> <b>القسم </b></label>
+                                <input type="text" placeholder="" name="section" required>
+
+                                <label for="reason"> <b>سبب رغبتك في التسجيل في هذه الدورة </b></label>
+                                <input type="text" placeholder="" name="reason" required>
+
+
+
+
+
+
+                                <div class="clearfix">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn3">الغاء</button>
+                                    <button type="submit" class="signupbtn3">تسجيل</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <div class="dropdown">
+                <button class="dropbtn" style="width:500px">الغاء التسجيل في الدورة</button>
+                <div class="dropdown-content">
+
+                    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">الغاء تسجيل</button>
+
+                    <div id="id02" class="modal">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <form class="modal-content" action="#">
+                            <div class="container">
+                            </div>
+                            <h3>هل أنت متأكد من الغاء التسجيل في البرنامج التدريبي؟ </h3>
+                            <button type="submit" class="button10">نعم</button>
+
+
+                            <hr>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </center>
+
+
+
+</body>
+</html>
+
+<footer>
+
+
+    <p> ادرة موقع التدريب والتطوير&copy; 2022</p>
+
+</footer>

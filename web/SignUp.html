@@ -1,0 +1,167 @@
+﻿<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>تسجيل الدخول </title>
+    <meta charset="utf-8" />
+    <meta name=" description" content=" login" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Stylesheet" href="css/style.css" />
+    </head>
+<body>
+
+    <header>
+
+
+        <div class="search-container">
+            <center>
+
+
+                <form action="/action_page.php">
+                    <input type="text" placeholder="البحث عن برنامج تدريبي" name="search">
+                    <button type="submit"><i class="SearchButton"> بحث</i></button>
+
+                </form>
+            </center>
+        </div>
+<br />
+
+            <div class="container">
+                <div id="brand">
+                    <h1> التدريب والتطوير</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current"> <a href="index.html">الصفحة الرئيسية </a></li>
+                        <li>  <a href="login.html">تسجيل الدخول </a></li>
+                        <li> <a href="SignUp.html">إنشاء حساب </a> </li>
+                        <li> <a href="AboutUs.html">عن التدريب والتطوير </a> </li>
+
+
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ادارة التدريب والتطوير </title>
+
+    <meta charset="utf-8" />
+    <meta name=" description" content=" ادارة التدريب والتطوير" />
+
+    <link rel="Stylesheet" href="css/style.css" />
+
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="search-container">
+            <center>
+
+
+                <form action="/action_page.php">
+                    <input type="text" placeholder="البحث عن برنامج تدريبي" name="search">
+                    <button type="submit"><i class="SearchButton"> بحث </i></button>
+
+                </form>
+            </center>
+        </div>
+        <br />
+
+
+
+        <div class="container">
+            <div id="brand">
+                <h1> التدريب والتطوير</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"> <a href="index.html">الصفحة الرئيسية </a></li>
+                    <li>  <a href="login.html">تسجيل الدخول </a></li>
+                    <li> <a href="SignUp.html"> انشاء حساب  </a> </li>
+                    <li> <a href="AboutUs.html">عن التدريب والتطوير </a> </li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <center>
+        <a  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto"> </button>  <img src="images/register.png" style="width:500px; height:500px" /></a>
+       
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+                <div class="container">
+                    <h1>تسجيل</h1>
+                    <p>قم بتعبئة البيانات التالية لانشاء حساب</p>
+                    <hr>
+                    <label for="email"><b>اسم الموظف الرباعي</b></label>
+                    <input type="text" placeholder="قم بكتابة الاسم الرباعي" name="name" required>
+
+                    <label for="email"><b> رقم الهوية</b></label>
+                    <input type="text" placeholder="" name="SSN" required>
+
+
+                    <label for="ID"><b>الرقم الوظيفي</b></label>
+                    <input type="text" placeholder=" " name="ID" id="ID" required>
+
+                    <label for="Section"><b>القسم </b></label>
+                    <input type="text" placeholder=" " name="section" id="section" required>
+
+                    <label for="JN"><b>مسمى الوظيفة </b></label>
+                    <input type="text" placeholder=" " name="JN" id="JN" required>
+
+                    <label for="Branch"><b>الفرع</b></label>
+                    <input type="text" placeholder=" " name="Branch" id="Branch" required>
+
+                    <label for="Phone number"><b>رقم الجوال</b></label>
+                    <input type="text" placeholder=" " name="phone number" id="phone number" required>
+
+                    <label for="email"><b>الايميل</b></label>
+                    <input type="text" placeholder="الايميل" name="email">
+
+                    <label for="psw"><b>كلمة المرور</b></label>
+                    <input type="password" placeholder="كلمة المرور" name="psw" required>
+
+                    <label for="psw-repeat"><b>تأكيد كلمة المرور</b></label>
+                    <input type="password" placeholder="اعد كتابة كلمة المرور" name="psw-repeat" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> أقر بأن المعلومات المدخلة صحيحة
+                    </label>
+
+
+                    <div class="clearfix">
+                        <button type="submit" class="button5">تسجيل</button>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="button4">الغاء</button>
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </center>
+
+
+
+</body>
+</html>
+
+
+<footer>
+
+
+    <p> ادرة موقع التدريب والتطوير&copy; 2022</p>
+
+</footer>
